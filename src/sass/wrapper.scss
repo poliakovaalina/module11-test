@@ -1,0 +1,117 @@
+.wrapper {
+  height: 1000px;
+  background-size: cover;
+  background: url(../images/banner.png) no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
+  .wrapper {
+    background: url(../images/banner@2x.png) no-repeat;
+    height: 1000px;
+    background-size: cover;
+  }
+}
+
+.wrapper__header {
+  padding-top: 30px;
+}
+
+.wrapper__navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper__menu {
+  display: flex;
+  flex-basis: 490px;
+  justify-content: space-between;
+
+  &--item {
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  &--item a {
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: $font-base;
+    font-weight: 500;
+    color: $primari-white;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  &--item:hover a {
+    color: $primari-yellow;
+    cursor: pointer;
+  }
+
+  &--item::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: $primari-yellow;
+    margin: 0 auto;
+    margin-top: 12px;
+    opacity: 0;
+  }
+
+  &--item:hover::after {
+    opacity: 1;
+  }
+}
+
+.wrapper__menu {
+  &--icon svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: $primari-white;
+  }
+
+  &--icon:hover svg {
+    fill: $primari-yellow;
+    cursor: pointer;
+  }
+}
+
+.wrapper__title {
+  max-width: 821px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 150px;
+  font-family: $font-base;
+  color: $primari-white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.933;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.wrapper__subtitle {
+  font-size: 72px;
+  font-family: $font-kaushan;
+  color: $primari-white;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 158px;
+}
+
+.wrapper__button {
+  width: 164px;
+  height: 44px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $primari-white;
+  background-color: $primari-black;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 116px;
+  background: rgba(255,255,255, 0);
+}
