@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://poliakovaalina.github.io/module11-test/",
+  "homepage": "https://poliakovaalina.github.io/module11-test/build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/poliakovaalina/module11-test.git"
